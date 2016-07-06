@@ -9,6 +9,27 @@
 <body <?php body_class(); ?>>
 <div id="wrapper">
     <div class="inner">
-        <div class="breadcrumb">
-            <?php echo esc_attr__( bloginfo( 'name' ) ); ?>
+        <div class="col-12">
+            <div class="breadcrumb">
+                <?php echo esc_attr__( bloginfo( 'name' ) ); ?>
+            </div>            
         </div>
+        <?php if( is_front_page() ) : ?>
+            <header id="frontHeader">
+                <div class="container">
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav-icon.svg" alt="">
+                    </div>
+                    <div>
+                        <a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-mahemo.svg" alt="Logo Mahemo"></a>
+                    </div>
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mouse-scroll.svg" alt="Scroll Down">
+                    </div>
+                </div>
+            </header>
+        <?php else : ?>
+        
+        <?php endif; ?>
+       
+      
