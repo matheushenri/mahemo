@@ -7,7 +7,9 @@ Description: Tema desenvolivido exclusivamente para o site Mahemo.
 Version: 1.0
 */
 
-* {
+*,
+:before,
+:after {
     padding: 0px;
     margin: 0px;
 }

@@ -7,6 +7,11 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<nav id="navigation">
+    <div class="inner">
+        <?php wp_nav_menu( 'theme_location', 'main-menu' ); ?>
+    </div>
+</nav>
 <div id="wrapper">
     <div class="inner">
         <div class="col-12">
@@ -18,10 +23,12 @@
             <header id="frontHeader">
                 <div class="container">
                     <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav-icon.svg" alt="">
+                        <a href="#" class="showNav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav-icon.svg" alt=""></a>
                     </div>
                     <div>
-                        <a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-mahemo.svg" alt="Logo Mahemo"></a>
+                        <a href="<?php echo site_url(); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-mahemo.svg" alt="Logo Mahemo">
+                        </a>
                     </div>
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mouse-scroll.svg" alt="Scroll Down">
@@ -29,7 +36,7 @@
                 </div>
             </header>
         <?php else : ?>
-        
+            <h1>Não é front-page</h1>
         <?php endif; ?>
        
       
