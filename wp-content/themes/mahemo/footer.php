@@ -2,10 +2,11 @@
 </div>
     <script type="text/javascript">
         jQuery(function ($) {
-            $('.showNav').click('1', function () {
-               $('#navigation').animate({
-                  height: 'toggle'
-               }, 500);
+            var n = 0;
+            $('.showNav').toggle(function () {
+                $('#navigation').slideDown(800);    
+            }, function () {
+                $('#navigation').slideUp(800);
             });
         });
     </script>

@@ -23,7 +23,7 @@
             <header id="frontHeader">
                 <div class="container">
                     <div>
-                        <a href="#" class="showNav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/nav-icon.svg" alt=""></a>
+                        <a href="#" class="showNav"><i></i></a>
                     </div>
                     <div>
                         <a href="<?php echo site_url(); ?>">
