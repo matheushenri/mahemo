@@ -1,0 +1,89 @@
+/*
+Theme Name: Mahemo Studio
+Theme URI: http://www.mahemo.com
+Author: Matheus Henrique de Moraes - Mahemo
+Author URI http://www.mahemo.com
+Description: Tema desenvolivido exclusivamente para o site Mahemo.
+Version: 1.0
+*/
+
+*,
+:before,
+:after {
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Assistant', sans-serif;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+div,
+nav,
+header,
+footer,
+article,
+aside {
+    display: block;
+}
+
+/* Padrões Títulos */
+
+h1 {
+
+}
+
+/*Padrões de Colunas*/
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33.33%;
+}
+
+.col-4 {
+    width: 25%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/*Padrões de Conteúdo*/
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
