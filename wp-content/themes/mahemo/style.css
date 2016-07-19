@@ -35,6 +35,12 @@ aside {
     display: block;
 }
 
+/* Padrões Títulos */
+
+h1 {
+
+}
+
 /*Padrões de Colunas*/
 
 .col-2 {
@@ -77,10 +83,6 @@ section {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
     max-width: 1000px;
     margin: 0 auto;
 }
